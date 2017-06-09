@@ -1,5 +1,5 @@
 FROM fedora:24
-MAINTAINER Jeff Geerling
+MAINTAINER Karl Hepworth
 ENV container=docker
 
 # Update and enable systemd.
@@ -20,6 +20,7 @@ RUN dnf makecache fast \
       sudo \
       which \
       python2-dnf \
+      unzip \
  && dnf clean all
 
 # Disable requiretty.
