@@ -22,6 +22,7 @@ RUN dnf makecache fast \
       python2-dnf \
       unzip \
       tar \
+      findutils \
  && dnf clean all
 
 # Disable requiretty.
