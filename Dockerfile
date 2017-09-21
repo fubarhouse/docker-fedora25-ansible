@@ -27,6 +27,7 @@ RUN dnf makecache fast \
       unzip \
       tar \
       gcc \
+      libffi-devel \
       findutils \
  && dnf clean all
 
