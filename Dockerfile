@@ -26,6 +26,7 @@ RUN dnf makecache fast \
       python2-dnf \
       unzip \
       tar \
+      gcc \
       findutils \
  && dnf clean all
 
