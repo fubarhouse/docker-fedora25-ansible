@@ -29,6 +29,7 @@ RUN dnf makecache fast \
       gcc \
       libffi-devel \
       glibc \
+      glibc-devel \
       findutils \
  && dnf clean all
 
