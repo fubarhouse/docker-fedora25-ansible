@@ -20,6 +20,7 @@ RUN dnf makecache fast \
       make \
       python-devel \
       python-pip \
+      openssl-devel \
       sudo \
       which \
       python2-dnf \
