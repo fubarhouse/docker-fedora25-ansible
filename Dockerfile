@@ -33,6 +33,9 @@ RUN dnf makecache fast \
       findutils \
  && dnf clean all
 
+# Install Ansible
+RUN pip install ansible
+
 # Disable requiretty.
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 
